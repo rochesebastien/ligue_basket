@@ -1,0 +1,609 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: #e7e6e1;
+	background-size: cover;
+	background-position: center center;
+	height: 100vh;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 1000;
+}
+
+header a{
+	text-decoration: none;
+}
+
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 70px;
+}
+
+#img-logo{
+	width: 100px;
+	height: auto;
+	cursor: pointer;
+}
+
+.nav-area{
+	list-style: none;
+}
+
+.nav-area li{
+	display: inline-block;
+	padding: 0 15px;
+	text-transform: uppercase;
+	font-size: 28px;
+}
+
+.nav-area li a{
+	transition: .3s;
+	color: #314e52;
+}
+
+.nav-area li a:hover{
+	color: #f2a154;
+}
+
+.btn-area{
+	cursor: pointer;
+	color: #e7e6e1;
+	font-size: 28px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	padding: 10px 30px;
+	border-radius: 5px;
+	background: #314e52;
+	transition: .3s;
+}
+
+.btn-area:hover{
+	background-color: #f2a154;
+}
+
+#img-karate{
+	clip-path: polygon(5% 0, 100% 0, 100% 100%, 50% 100%);
+	height: 600px;
+	width: auto;
+	margin-top: 50px;
+	margin-right: 60px;
+	float: right;
+}
+
+#presentation{
+	position: absolute;
+	top: 340px;
+	margin-left: 30px;
+	font-size: 26px;
+	line-height: 100px;
+}
+
+/*CSS contact*/
+
+#contact-area{
+	
+	width: 800px;
+	height: 620px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-top: 40px;
+	border-radius: 20px;
+  	background: #314e52;
+  	border: 5px solid;
+  	border-color: #f2a154;
+}
+
+#contact-area h1 {
+	color:#f2a154;
+	border-bottom: 2px solid #f2a154;
+	text-align: center;
+  	font-size: 56px;
+  	padding: 10px;
+
+}
+
+.champ-input label{
+	font-size: 24px;
+	color: #e7e6e1;
+}
+
+.champ-input input{
+	background-color: #e7e6e1;
+	border-color: transparent;
+	border-radius: 10px;
+	width: 250px;
+}
+
+.champ-input{
+	margin-top: 20px;
+}
+
+.aligned{
+	display: inline-block;
+}
+
+#first-line-contact{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#first-line-contact #nom{
+	margin-left: 125px;
+}
+
+#first-line-contact #prenom{
+	float: right;
+	margin-right: 125px;
+}
+
+#contact-area #email{
+	margin-left: 125px;
+}
+
+#contact-area #commentaire{
+	margin-left: 125px;
+}
+
+#contact-area #email input{
+	margin-left: auto;
+	margin-right: auto;
+	width: 550px;
+}
+
+#contact-area #commentaire textarea{
+	margin-left: auto;
+	margin-right: auto;
+	width: 550px;
+	height: 250px;
+	background-color: #e7e6e1;
+	resize: none;
+	outline: 0;
+	transition: .3s;
+}
+
+.button-contact{
+	display: inline-block;
+    text-align: center;
+    border-radius: 40px;
+    background-color: #f2a154; 
+    border: none;
+    cursor: pointer;
+    color: #e7e6e1;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    margin-top: 20px;
+    width: 200px;
+    transition: .5s;
+}
+
+.button-contact:hover{
+	background-color: #e7e6e1; 
+	color: #314e52;
+}
+
+#button-confirm-contact{
+	margin-left: auto;
+	margin-right: auto;
+	width: 200px;
+}
+
+#contact-area input[type=text]{
+	outline: 0;
+	transition: .3s;
+}
+
+#contact-area input[type=text]:focus{
+	border: 3px solid #f2a154;
+}
+
+#contact-area textarea:focus{
+	border: 3px solid #f2a154;
+}
+
+/* CSS DE DIVISION */
+
+#divisions-tiltle{
+	text-align: center;
+	font-size: 48px;
+	
+}
+
+#tiltle-border{
+	border: 2px solid black;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-top: 40px;
+}
+
+#fieldset-liste-division{
+	width: 300px;
+	height: 400px;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#division-table{
+	width: 100%;
+}
+
+.division-ligne-first{
+	font-size: 24px;
+}
+
+.division-cellule-first{
+	text-align: center;
+}
+
+.division-cellule-id{
+	width: 10%;
+}
+
+.division-cellule-nom{
+	width: 55%;
+	border-left: 1px solid black;
+}
+
+.division-cellule-action{
+	width: 35%;
+	border-left: 1px solid black;
+}
+
+.division-ligne{
+	text-align: center;
+
+}
+
+.division-cellule-id-print{
+	width: 10%;
+}
+
+.division-cellule-nom-print{
+	width: 55%;
+	border-left: 1px solid black;
+}
+
+.division-cellule-action-print{
+	width: 35%;
+	border-left: 1px solid black;
+}
+
+#form-modifier{
+	border: none;
+	text-decoration: none;
+}
+
+#form-supprimer{
+	border: none;
+	text-decoration: none;
+}
+
+.division-cellule-action-print input[type=submit]{
+	transition: .3s;
+}
+
+.division-cellule-action-print input[type=submit]:hover{
+	font-size: 16px;
+}
+
+
+
+
+#tiltle-modifier-division{
+	text-align: center;
+	font-size: 48px;
+	font-weight: bold;
+	text-decoration: underline;
+
+}
+
+#div-tiltle-modifier-division{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-top: 40px;
+	border: 2px solid black;
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
+}
+
+.label-modifier{
+	width: 500px;
+	margin-left: 30%;
+	font-size: 40px;
+	text-align: center;
+	display: inline-block;
+}
+
+.div-input-division{
+	margin-top: 10px;
+}
+
+.div-input-division input{
+}
+
+/*CSS Match*/
+#title_div_match{
+	border: 2px solid black;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-top: 40px;
+	margin-bottom: 50px;
+}
+
+.match_row{
+	transition: 0.3s;
+}
+
+.match_row:hover{
+	transition: 0.3s;
+	background-color: #819598;
+}
+
+
+.cellule_match{
+	width: 119px;
+	font-size: 18px;
+	text-align: center;
+	border: 1px solid black;
+}
+
+#title_match{
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	font-size: 48px;
+
+}
+#match_div_table{
+	width: 600px;
+	height: 300px;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	border-color: transparent;
+}
+
+#match_table{
+width:100%;
+height:63px;
+border-collapse: collapse;
+}
+
+
+.table_top_match{
+text-align: center;
+font-size: 58px;
+}
+
+.logo_convoc{
+	padding:5px;
+	width: 35px;
+	height: 35px;
+	transition: .3s;
+}
+
+.logo_convoc:hover{
+ width:50px; 
+ height:50px;
+ transition: .3s;
+}
+
+
+#alert-suppression-impossible{
+	display: table;
+	width: 500px;
+	height: 60px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	background-color: #FF3030;
+	border-radius: 20px;
+	box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+	border: 2px solid #FF1717;
+	padding-left: 20px;
+}
+
+#alert-suppression-texte{
+	display: table-cell;
+	vertical-align: middle;
+	color: #C80000;
+}
+
+/*CSS Convocation*/
+#convocation_logo{
+	width: 120px;
+	margin-top: 50px;
+	margin-left: 400px;
+}
+
+
+/* CSS Modification d'une division */
+
+#div-modification-division{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	width: 800px;
+	height: 200px;
+	border: 2px solid #2E474B;
+	border-radius: 20px;
+	background-color: #314e52;
+	filter: drop-shadow(0 0 0.75rem #f2a154);
+}
+
+#h4-tiltle-modification{
+	margin-top: 10px;
+	margin-left: 15px;
+	text-decoration: underline;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	color : #f2a154;
+}
+
+#input-modified-division{
+	margin-top: 45px;
+	margin-left: 30px;
+	width: 70%;
+	height: 60px;
+	text-align: center;
+	color: black;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 1000;
+}
+
+#input-modified-division::placeholder{
+	color: black;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 1000;
+}
+
+#icon-modifier-div{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	margin-top: 50px;
+	margin-left: -30px;
+}
+
+#form-modification-division input[type=submit]{
+	position: absolute;
+ 	font-size:0;
+ 	width:256px;
+ 	height:256px;
+ 	margin-left: -30px;
+ 	margin-top: -50px;
+ 	transform: scale(.5);
+ 	background: url('../images/save-modification.png');
+ 	border: none;
+ 	transition: .3s;
+}
+
+#form-modification-division input[type=submit]:hover{
+	transform: scale(.7);
+	cursor: pointer;
+}
+
+/* CSS Insertion division */
+
+#fieldset-ajout-division{
+	width: 300px;
+	height: 50px;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	border: none;
+}
+
+#fieldset-ajout-division legend{
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	border-bottom: 6px solid black;
+	width: 200px;
+}
+
+#input-insertion-division{
+	height: 30px;
+	width: 220px;
+	margin-top: 10px;
+	border: .8px solid black;
+	border-radius: 20px;
+	outline: 0;
+	padding-left: 10px;
+	margin-left: -5px;
+}
+
+#submit-insertion-division-id{
+	position: absolute;
+ 	font-size:0;
+ 	width:50px;
+ 	height:50px;
+ 	margin-left: 20px;
+ 	transform: scale(.6);
+ 	background: url(../images/send.png);
+ 	border: none;
+ 	transition: .3s;
+}
+
+#submit-insertion-division-id:hover{
+	transform: scale(.8);
+	cursor: pointer;
+}
+
+/* CSS de connexion */
+
+#form-connexion{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 200px;
+	width: 350px;
+	padding: 30px;
+	border: 2px solid #314e52;
+	border-radius: 20px;
+}
+
+#form-connexion #mot-de-passe{
+	margin-top: 20px;
+}
+
+#form-connexion input[type=text]{
+	float: right;
+	margin-top: 2px;
+	height: 20px;
+	border-radius: 5px;
+	border-color: transparent;
+	outline-color: #314e52;
+	border-bottom-color: #314e52;
+}
+
+#form-connexion input[type=password]{
+	float: right;
+	margin-top: 2px;
+	height: 20px;
+	border-radius: 5px;
+	border-color: transparent;
+	outline-color: #314e52;
+	border-bottom-color: #314e52;
+}
+
+#form-connexion label{
+	font-size: 24px;
+}
+
+#form-connexion legend{
+	font-size: 18px;
+	color: #314e52;
+	padding: 5px 5px;
+}
+
+#form-connexion input[type=submit]{
+	margin-top: 20px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 150px;
+	height: 30px;
+}
